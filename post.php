@@ -51,11 +51,15 @@ $post = $stmt->fetch();
           <a href="index.php" class="text-blue-500 hover:text-blue-700 hover:font-bold">Go Back</a>
         </div>
       </div>
-      <!-- Delete Post -->
+
+      <!-- Edit Form -->
+      <a href="edit.php?id=<?= $post['id'] ?>" class="bg-green-500 text-white px-4 py-2 rounded block w-full text-center mb-4 hover:bg-green-600 focus:outline-none">Edit</a>
+
+      <!-- Delete Form -->
       <form action="delete.php" method="post">
         <input type="hidden" name="_method" value="delete">
         <input type="hidden" name="id" value="<?= $post['id'] ?>">
-        <button type="submit" name="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 focus:outline-none">Delete</button>
+        <button type="submit" name="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 focus:outline-none w-full">Delete</button>
     </div>
   </div>
 </body>
