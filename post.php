@@ -48,7 +48,7 @@ $post = $stmt->fetch();
         <div class="p-4">
           <h2 class="text-xl font-semibold"><?= $post['title']; ?></h2>
           <p class="text-gray-700 text-lg mt-2 mb-5"><?= $post['body']; ?></p>
-          <a href="index.php">Go Back</a>
+          <a href="index.php" class="text-blue-500 hover:text-blue-700 hover:font-bold">Go Back</a>
         </div>
       </div>
       <!-- Delete Post -->
