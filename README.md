@@ -1,3 +1,3 @@
-# PHP 
+# PHP Blog
 ## Laragon
 ### MySQL Workbench
