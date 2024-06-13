@@ -28,7 +28,7 @@ $post = $stmt->fetch();
 // Check for form submission
 $isPutRequest = $_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['_method'] ?? '') === 'put';
 
-if($isPutRequest) {
+if ($isPutRequest) {
   $title = htmlspecialchars($_POST['title'] ?? '');
   $body = htmlspecialchars($_POST['body'] ?? '');
 
