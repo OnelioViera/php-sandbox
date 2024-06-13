@@ -1,21 +1,25 @@
 <?php
+$title = "Introduction to PHP";
+$author = "Brad Traversy";
+$body = "PHP (Hypertext Preprocessor) is a widely used server-side scripting language that has revolutionized web development. With its simplicity, flexibility, and vast community support, PHP has become the backbone of countless dynamic websites and web applications.";
+$pageTitle = 'Brad\'s PHP Blog | ' . $title;
 
-$number1 = 5;
-$number2 = 10;
-$number3 = '20';
-$fruit = 'apple';
-$bool1 = true;
-$bool2 = false;
-$null = null;
+?>
 
-// Implicit conversion
-$result = $number1 + $number2; // int
-$result = $number1 + $number3; // int (string to int)
-$result = $number3 + $number3; // int (string to int)
-$result = $number1 . $number2; // string (int to string)
-// $result = $fruit + $number2; // Error (string to int)
-$result = $number1 + $bool1; // int (bool to int)
-$result = $number1 + $bool2; // int (bool to int)
-$result = $number1 + $null; // int (null to int)
-
-var_dump($result);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?= $pageTitle ?></title>
+  </head>
+  <body>
+    <main>
+      <h1><?= $title ?></h1>
+      <p>By: <?= $author ?></p>
+      <p>
+        <?= $body ?>
+      </p>
+    </main>
+  </body>
+</html>
